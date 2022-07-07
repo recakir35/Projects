@@ -1,0 +1,29 @@
+
+System.out.printf(format, argümanlar);
+
+format:
+printf(%[argument_index$][flags][width][.precision]conversion)
+
+% : Dönüşümü başlatan simge
+%d  *işaretli decimal (10 tabanlı) tamsayı+,
+%u *işaretsiz decimal (10 tabanlı) tamsayı+
+%o  *işaretsiz octal (8 tabanlı) tamsayı+,
+%x, %X  *işaretsiz hexadecimal (16 tabanlı) tamsayı]
+%z[n], %Z[n] unsigned int unsigned integer base n, with n coded in decimal; include square brackets
+%f float Kesirli sayı, %e, %E float Kesirli sayı, bilimsel notasyon (üstel için e ya da E kullanır)
+%g, %G float Değerine bağlı olarak %f ya da %e rolünü oynar. Üst -4 ten büyük olduğunda bilimsel notasyon kullanır.
+%s String string, %c char karekter
+%p Object Object, işaretsiz hexadecimal olarak hash kodu belirtir (örn, pointer değeri)
+%\n (none) platform-bağımsız satır ayracı
+%n (null) Karekterleri sayar
+
+[] Bu parantezlerin içleri isteğe bağlıdır. Gerekli ise yazılır.
+argument_index$: değişkenin çıktıda nereye konuşlanacağını belirtir.
+("1$" ilk değişkene yet tutar, "2$" ikinci değişkene yet tutar,  '<' önceki formatın kullanılacağını belirtir)
+
+Flags: '-'(sola dayalı yaz), '^' (Büyük harfle yaz),  '+' (pozitif/negatif işareti koy),     '0' (nakışın hanelerini doldur)
+
+width: (genişlik) Çıktının kaç kolona yazılacağını belirler.
+
+precision: (duyarlık) Kesir hanelerinin sayısını belirler.Stringtede yer belirler
+
